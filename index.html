@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3 class="title">College Details</h3>
+            <form action="">
+                <div class="fields">
+                    <label for="collegeName">College Name:</label>
+                    <input type="text" id="collegeName" />
+                </div>
+                <div class="fields">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" />
+                </div>
+
+                <div class="fields">
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input type="text" id="dateOfBirth" />
+                </div>
+
+                <div class="fields">
+                    <label for="class">Class:</label>
+                    <input type="text" id="class" />
+                </div>
+
+                <div class="fields">
+                    <label for="rollNumber">Roll Number:</label>
+                    <input type="text" id="rollNumber" />
+                </div>
+                <div class="fields">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="number" id="contactNumber" />
+                </div>
+
+                <div class="fields">
+                    <button class="btn" type="button" onclick="updateCard()"> Submit Form</button>
+                    <!-- <button class="btn" type="button" onclick="clearAll()">Clear All</button> -->
+                    <button class="btn" type="reset">Clear All</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="box">
+            <h3 class="title" id="collegeNameVal">College Name</h3>
+            <img src="profile-img.png" alt="student profile">
+            <div class="fields">
+                <label>Student Name:</label>
+                <label id="collegeNameVal">Dipesh</label>
+            </div>
+            <div class="fields">
+                <label>Date of Birth</label>
+                <label id="dateOfBirthVal">22/02/2002</label>
+            </div>
+            <div class="fields">
+                <label>Class:</label>
+                <label id="classVal">2</label>
+            </div>
+            <div class="fields">
+                <label>Roll Number</label>
+                <label id="rollNumberVal">3236</label>
+            </div>
+            <div class="fields">
+                <label>Contact Number</label>
+                <label id="contactNumberVal">0987654321</label>
+            </div>
+            <button class="btn print" type="button">Print Id-Card</button>
+        </div>
+    </div>
+    <script src="jsp.js"></script>
+</body>
+
+</html>
